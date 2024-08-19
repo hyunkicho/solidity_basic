@@ -6,9 +6,10 @@ import React from 'react';
 import { TransferERC20 } from '../hooks/transfer_erc20';
 import { GetERC20Data } from '../hooks/read_erc20_info';
 import { GetBalanceOf } from '../hooks/read_erc20';
+import { useContractAddress } from '../hooks/useContractAddress';
 
 const Home: NextPage = () => {
-  const contractAddress : `0x${string}` = "0x5FbDB2315678afecb367f032d93F642f64180aa3"; // TODO: change CA according to Network
+  const { contractAddress, ContractAddressInput } = useContractAddress("0xB6Bb4442bA7Ba15E5C6912D07900cD59a9CBFf68");
 
   return (
     <div className={styles.container}>
@@ -20,9 +21,17 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <ConnectButton />
-        <GetERC20Data contractAddress={contractAddress} />
-        <GetBalanceOf contractAddress={contractAddress} />
-        <TransferERC20 contractAddress={contractAddress}/>
+        
+        {/* Contract Address Input from the custom hook */}
+        {ContractAddressInput}
+
+        {contractAddress && (
+          <>
+            <GetERC20Data contractAddress={contractAddress} />
+            <GetBalanceOf contractAddress={contractAddress} />
+            <TransferERC20 contractAddress={contractAddress} />
+          </>
+        )}
       </main>
 
       <footer className={styles.footer}>

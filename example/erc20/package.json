@@ -4,6 +4,7 @@
     "hardhat": "^2.22.8"
   },
   "dependencies": {
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "ganache": "^7.9.2"
   }
 }

@@ -17,15 +17,14 @@ npm install --save-dev hardhat
 npx hardhat init
 ```
 
-use local node
+use local node with hardhat
 ```
 npx hardhat node
 ```
 
-make dapp
-
-metamask need server
+use loccal node with ganache
 ```
-npx http-server
+npm install ganache --global
+ganache
 ```
 
