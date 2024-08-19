@@ -7,7 +7,8 @@ import { WagmiProvider } from 'wagmi';
 import {
   bscTestnet,
   wemixTestnet,
-  localhost
+  localhost,
+  hardhat
 } from 'wagmi/chains';
 import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 
@@ -18,8 +19,7 @@ const config = getDefaultConfig({
     bscTestnet,
     wemixTestnet,
     localhost,
-    ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [wemixTestnet] : []),
-    
+    hardhat
   ],
   ssr: true,
 });

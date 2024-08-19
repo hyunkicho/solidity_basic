@@ -7,9 +7,10 @@ import { TransferERC20 } from '../hooks/transfer_erc20';
 import { GetERC20Data } from '../hooks/read_erc20_info';
 import { GetBalanceOf } from '../hooks/read_erc20';
 import { useContractAddress } from '../hooks/useContractAddress';
+import { TransferEventERC20 } from '../hooks/event_erc20 ';
 
 const Home: NextPage = () => {
-  const { contractAddress, ContractAddressInput } = useContractAddress("0xB6Bb4442bA7Ba15E5C6912D07900cD59a9CBFf68");
+  const { contractAddress, ContractAddressInput } = useContractAddress("0x5FbDB2315678afecb367f032d93F642f64180aa3");
 
   return (
     <div className={styles.container}>
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
             <GetERC20Data contractAddress={contractAddress} />
             <GetBalanceOf contractAddress={contractAddress} />
             <TransferERC20 contractAddress={contractAddress} />
+            <TransferEventERC20 contractAddress={contractAddress} />
           </>
         )}
       </main>
