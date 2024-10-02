@@ -23,13 +23,13 @@ module.exports = {
     },
     metatestnet: {
       url: "https://api.metadium.com/dev",
-      accounts: ["Put your Private Key here"],
+      accounts: ["40af5c417cfe501a722825ef86b235b76804d4b1799628d21039a40d90d9a416"],
       gasPrice: 101 * (10 ** 9),
       gasLimit: 10000000,
     },
     wemixTestnet: {
       url: "https://api.test.wemix.com",
-      accounts: ["Put your Private Key here"],
+      accounts: ["40af5c417cfe501a722825ef86b235b76804d4b1799628d21039a40d90d9a416"],
       gasPrice: 101 * (10 ** 9),
       gasLimit: 10000000,
     }

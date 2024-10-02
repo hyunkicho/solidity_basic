@@ -17,3 +17,24 @@ npx hardhat ignition deploy ./ignition/modules/Lock.js
 1. npm install
 2. npx hardhat compile
 3. npx hardhat run scripts/0.deployStorage.js --network wemixTestnet
+
+# 사용가능한 모듈
+
+1. 테스트 코드 커버리지 체크
+```
+npx hardhat coverage
+```
+결과 값
+```
+--------------|----------|----------|----------|----------|----------------|
+File          |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
+--------------|----------|----------|----------|----------|----------------|
+ contracts/   |      100 |      100 |      100 |      100 |                |
+  Storage.sol |      100 |      100 |      100 |      100 |                |
+--------------|----------|----------|----------|----------|----------------|
+All files     |      100 |      100 |      100 |      100 |                |
+--------------|----------|----------|----------|----------|----------------|
+```
+
+2. gas calculator
+
