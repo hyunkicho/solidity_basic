@@ -44,6 +44,10 @@ describe("Storage", function () {
       const StoreTx3 = await Storage.store(3);
       await StoreTx3.wait();
       expect(await Storage.retrieve()).to.equal(Number(3));
+
+      const StoreTx4 = await Storage.store(4);
+      await StoreTx4.wait();
+      expect(await Storage.retrieve()).to.equal(Number(4));
     })
   });
 });

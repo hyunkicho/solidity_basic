@@ -1,5 +1,8 @@
 {
   "devDependencies": {
+    "sol2uml": "^2.5.20"
+  },
+  "dependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "hardhat": "^2.22.12"
   }
