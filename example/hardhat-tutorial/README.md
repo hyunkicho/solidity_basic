@@ -68,11 +68,12 @@ https://www.npmjs.com/package/sol2uml
 
 설치
 ```
-npm i sol2uml
 npm install -g sol2uml
 ```
 
 사용
 ```
 sol2uml contracts/
+sol2uml contracts/Storage.sol
+sol2uml contracts/Lock.sol
 ```
