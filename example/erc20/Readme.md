@@ -28,3 +28,15 @@ npm install ganache --global
 ganache
 ```
 
+# ERC20
+
+openzepplin wizard에서 erc20 토큰 설정하기
+```
+https://wizard.openzeppelin.com
+```
+
+openzepplin npm 설치
+```
+npm i @openzeppelin/contracts --save
+```
+
