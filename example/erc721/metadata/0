@@ -3,8 +3,7 @@
   "external_url": "https://openseacreatures.io/0", 
   "image": "https://storage.googleapis.com/opensea-prod.appspot.com/puffs/3.png", 
   "name": "Dave Starbelly",
-  "attributes": {
-    "attributes": [
+  "attributes": [
         {
           "trait_type": "Base", 
           "value": "Starfish"
@@ -45,5 +44,4 @@
           "value": 2
         }
       ]
-    }
 }
