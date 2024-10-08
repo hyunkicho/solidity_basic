@@ -1,0 +1,49 @@
+{
+  "description": "Friendly OpenSea Creature that enjoys long swims in the ocean.", 
+  "external_url": "https://openseacreatures.io/6", 
+  "image": "https://storage.googleapis.com/opensea-prod.appspot.com/puffs/6.png", 
+  "name": "Dave Starbelly",
+  "attributes": {
+    "attributes": [
+        {
+          "trait_type": "Base", 
+          "value": "Starfish6"
+        }, 
+        {
+          "trait_type": "Eyes", 
+          "value": "Bi6g"
+        }, 
+        {
+          "trait_type": "Mouth", 
+          "value": "Surprised6"
+        }, 
+        {
+          "trait_type": "Level", 
+          "value": 10
+        }, 
+        {
+          "trait_type": "Stamina", 
+          "value": 6.6
+        }, 
+        {
+          "trait_type": "Personality", 
+          "value": "Happy"
+        }, 
+        {
+          "display_type": "boost_number", 
+          "trait_type": "Aqua Power", 
+          "value": 66
+        }, 
+        {
+          "display_type": "boost_percentage", 
+          "trait_type": "Stamina Increase", 
+          "value": 16
+        }, 
+        {
+          "display_type": "number", 
+          "trait_type": "Generation", 
+          "value": 6
+        }
+      ]
+    }
+}
