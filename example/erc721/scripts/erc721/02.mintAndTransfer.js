@@ -18,11 +18,11 @@ async function main() {
     const mintTx4 = await TokenContract.safeMint(ownerEOA);
     await mintTx4.wait();
 
-    const transferTx = await TokenContract.transferFrom(ownerEOA,"0x42Dc4219385B814ad5e6ce1888865392a71ECa23", 0);
+    const transferTx = await TokenContract.transferFrom(ownerEOA,"0x42Dc4219385B814ad5e6ce1888865392a71ECa23", 1);
     await transferTx.wait();
     console.log("transferTx :", transferTx.hash);
 
-    const transferTx1 = await TokenContract.transferFrom(ownerEOA,"0x42Dc4219385B814ad5e6ce1888865392a71ECa23", 1);
+    const transferTx1 = await TokenContract.transferFrom(ownerEOA,"0x42Dc4219385B814ad5e6ce1888865392a71ECa23", 2);
     await transferTx1.wait();
     console.log("transferTx :", transferTx.hash);
 }
